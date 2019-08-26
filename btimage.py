@@ -1033,7 +1033,7 @@ class PrevNowMatching(object):
                 plt.text(x, y, str(i))
         plt.title(text)
         plt.axis("off")
-        plt.show()
+
 
     def __check_prev_label(self):
         for label in range(90):
@@ -1182,8 +1182,11 @@ class PrevNowCombo(WorkFlow):
         match = PrevNowMatching(self.prev, self.now)
         output = match.run()
         # plot input
+        plt.ion()
         match.show(match.prev_label_map, str(now_target-1) + " prev_label_map")
         match.show(match.now_label_map, str(now_target) + " now_label_map")
+        plt.ioff()
+        plt.show()
         if save:
             sys.stdout = open('file.txt', "a+")
             if match.prev_list:
