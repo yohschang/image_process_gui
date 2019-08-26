@@ -1,0 +1,14 @@
+load  1_afterwater.npy
+load  2_afterwater.npy
+prev label: 69 match BG label !!!!!
+prev label: 69 match BG label !!!!!
+Round 2 : prev label: 69 match --> now label:  69
+appear:  [40]
+disappear:  []
+finish second round!
+Round 2 : prev label: 69 match --> now label:  69
+appear:  [40]
+disappear:  []
+finish second round!
+revise  2_afterwater.npy
+revise  2_afterwater.npy
